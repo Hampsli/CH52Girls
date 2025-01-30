@@ -40,6 +40,18 @@ def NumPar():
    else:
        print("el numero", Numero, " NO es par")
 ########################################  
+def Entero():
+   
+    print("Dame un numero: ")
+    Numero=float(input())
+    NumeroInt=int(Numero)
+    NumeroFInt=float(NumeroInt)
+    if Numero-NumeroFInt==0:
+        print("el numero ",Numero, " es entero")
+    else:
+        print("el numero ",Numero, " NO es entero")
+            
+##########################################
 Num=int(input("Coloca el numero de la funcion deseada: "))
 if  Num==1:
     SumaLista()
@@ -47,8 +59,8 @@ elif Num==2:
     MultiLista()
 elif Num==3:
     NumPar()
-else:
-    print("Haz d")
+elif Num==4:
+    Entero()
 
 
 
