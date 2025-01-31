@@ -1,8 +1,13 @@
 
 print("Hello learners!")
+print("1) Sumar elementos de una lista")
+print("2) Multiplicar elementos de una lista")
+print("3) Definir si un numero es par")
+print("4) Definir si un numero es entero")
+################################
 def SumaLista(): 
     Lista=[]
-    Rango= int(input("porfavor, dame un rangoo: "))
+    Rango= int(input("porfavor, dame un rango: "))
     for i in range(Rango):
         Lista.append(int(input("porfavor, dame un numero: ")))
   
@@ -12,16 +17,50 @@ def SumaLista():
 
     print("la lista es:",Lista)
     print("la suma es:",Suma)
+####################################
+def MultiLista():
+    Lista=[]
+    Rango= int(input("porfavor, dame un rango: "))
+    for i in range(Rango):
+        Lista.append(int(input("porfavor, dame un numero: ")))
+  
+    Multiplicacion=1
+    j=1
+    for j in Lista:
+        Multiplicacion=Multiplicacion*Lista[j]
 
-Num=int(input("Si quieres hacer 1)Sumar una lista,  coloca el numero"))
+    print("la lista es:",Lista)
+    print("la multiplicacion es:",Multiplicacion)
+##########################################
+def NumPar():
+   Numero=int(input("porfavor, dame un numero "))
+   if Numero%2==0:
+       print("El numero ",Numero," es par")
+
+   else:
+       print("el numero", Numero, " NO es par")
+########################################  
+def Entero():
+   
+    print("Dame un numero: ")
+    Numero=float(input())
+    NumeroInt=int(Numero)
+    NumeroFInt=float(NumeroInt)
+    if Numero-NumeroFInt==0:
+        print("el numero ",Numero, " es entero")
+    else:
+        print("el numero ",Numero, " NO es entero")
+            
+##########################################
+Num=int(input("Coloca el numero de la funcion deseada: "))
 if  Num==1:
     SumaLista()
-elif Num == 2:
-    print("Haz b")
-elif Num == 3:
-    print("Haz c")
-else:
-    print("Haz d")
+elif Num==2:
+    MultiLista()
+elif Num==3:
+    NumPar()
+elif Num==4:
+    Entero()
 
 
 
