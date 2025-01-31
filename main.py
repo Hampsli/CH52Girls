@@ -1,24 +1,14 @@
+def trivia_fetch(num):
+  trivia= {
+    "Es un numero bonito": num + 26,
+    "Es de la suerte": num * 2,
+    "Es el numero de platos que debes de tener": num * 7,
+    "Son las sentadillas de hoy": num + 15,
+    "Si lo divides entre 8 y lo multiplicas po 80 te da: ": (num/8)*80
+  }
+  return trivia  
 
-def addmultiplenumbers(numbers):
-    "Suma"
-    return sum(numbers)
-
-def multiplymultiplenumbers(numbers):
-    "Multiplica"
-    result = 1
-    for num in numbers:
-        result *= num
-    return result
-
-def isiteven(num):
-    return isinstance(num, int) and num % 2 == 0
-
-def isitaninteger(num):
-    return isinstance(num, int)
-
-def main():
-  print("Hello learners!")
-
-if __name__=="__main__":
-  main()
-  
+print ("Hola usuario")
+num = int (input ("Ingrese un numero para mostrarte sus trivialidades: "))
+resultado= trivia_fetch(num)
+print(f"Las trivialidades son: {resultado}")
