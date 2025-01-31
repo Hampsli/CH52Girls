@@ -7,7 +7,7 @@ def trivia_fetch(num):
     c="?json"
     response=requests.get(a+b+c)
     trivia=json.loads(response.content)
+    return trivia
     
-
 
 trivia_fetch(42)["number"]
