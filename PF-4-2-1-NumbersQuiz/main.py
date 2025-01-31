@@ -11,11 +11,11 @@ if __name__=="__main__":
 #take one number as input, and it should output a dictionary of trivia about that number
 def trivia_fetch(number):
   my_api = "http://numbersapi.com/[number]?json"
-  new_api = my_api.replace("[number]", number)
-  print(new_api)
+  new_api = my_api.replace("[number]", str(number))
+  #print(new_api)
   my_request = requests.get(new_api)
   random_trivia = json.loads(my_request.content)
   return random_trivia
 
 number = main()
-trivia_fetch(number)
+print(trivia_fetch(number))
