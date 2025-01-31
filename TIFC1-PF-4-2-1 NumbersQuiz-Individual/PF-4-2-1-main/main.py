@@ -2,6 +2,14 @@
 import json    
 import requests
 
+# Aqui en main se hace la entrada de datos, definiendolo como entero
+def main():
+   
+   num = int(input("Hola, escriba un numero entero para obtener una mensaje curioso:  ")) 
+
+   #Aqui se realiza el metodo trivia_fetch que definimos con el algumento num ingresado
+   print(trivia_fetch(num)) 
+
 #Aqui definimos la funcion sabiendo que debe tener ingresado su argumento num previamente digitado
 def trivia_fetch(num):
     #Elegimos una variable que mediante requests.get , sera un metodo que se usa para traer datos de un servidor web
@@ -14,15 +22,6 @@ def trivia_fetch(num):
     # response.content es lo que contiene, "json.loads" es un metodo que lo vuelve un diccionario de python
     trivia_fetch = json.loads(respuesta.content) 
     return trivia_fetch
-
-# Aqui en main se hace la entrada de datos, definiendolo como entero
-def main():
-   
-   num = int(input("Hola, escriba un numero entero para obtener una mensaje curioso:  ")) 
-
-   #Aqui se realiza el metodo trivia_fetch que definimos con el algumento num ingresado
-   print(trivia_fetch(num)) 
-
 
 # esta sentencia if se requiere para hacer accionar el main
 if __name__=="__main__":
