@@ -5,7 +5,7 @@ def test_add_multiple_positive_integers():
   response = addmultiplenumbers([5,7,9])
   assert response == 21
 
-# Test 2
+# Test 2 venia como "complex" en lugar de complicated en canva
 def test_add_multiple_complicated_numbers():
   response = addmultiplenumbers([5,-7,9.3])
   response = round(response,1)
@@ -16,7 +16,7 @@ def test_multiply_multiple_positive_integers():
   response = multiplymultiplenumbers([4,5,6,7])
   assert response == 840
 
-# Test 4
+# Test 4 venia como "complex" en lugar de complicated en canva
 def test_multiply_multiple_complicated_numbers():
   response = multiplymultiplenumbers([4,-5,6.7])
   response = round(response, 0)
