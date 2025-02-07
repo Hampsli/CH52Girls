@@ -1,6 +1,6 @@
 // Refer to Task 3 in your Instructions to complete this task
 
-for (let i = 1; i <= 15; i++) {
+for (let i = 1; i <= 105; i++) {
   
   if (i % 15 == 0){
     console.log("FizzBuzz");
