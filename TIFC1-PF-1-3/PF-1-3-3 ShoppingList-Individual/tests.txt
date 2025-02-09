@@ -1,0 +1,19 @@
+Test 1: tomato tomato tomato
+input:
+tomato
+tomato
+tomato
+shopping_list
+
+output:
+['tomato', 'tomato', 'tomato']
+
+---
+Test 2: Pizza Pasta Chips
+input:
+Pizza
+Pasta
+Chips
+
+output:
+['Pizza', 'Pasta', 'Chips']
