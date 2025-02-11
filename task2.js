@@ -1,13 +1,10 @@
-// Refer to Task 2 in your Instructions to complete this task
+const arr = [16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
 
-for (let i = 1; i <= 105; i++) {
-  console.log(i);
-};
+// Type your code below this line!
+// 2. Use reverse() to reverse an array
 
-for (let i = 1; i <= 105; i++) {
-  if (i % 3 === 0) {
-      console.log("Fizz");
-  } else {
-      console.log(i);
-  }
-};
+arr.reverse();
+
+// Type your code above this line!
+
+arr.forEach(element => console.log(element))

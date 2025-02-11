@@ -1,33 +1,31 @@
 # Instructions
-The FizzBuzz challenge is one of the most common programming interview tasks in the world. The challenge is to write a program that will output a list of numbers, replacing every 3rd number with Fizz, and every 5th number with Buzz.
+Arrays are a simple data structure used everywhere in programming. There are many ways to interact with arrays in JavaScript.
 
-**Today, you will build and iterate on this challenge, and you will teach yourselves how to use for loops along the way.**
+**Today, you will be exploring arrays, and teaching yourselves different methods for manipulating them.**
 
-For each task, copy your code from the previous task, and extend it during the next task.
-
+For each of these tasks, type your code directly in the task file - the marking scripts will evaluate what you have written!
 
 ## Tasks
 
-1. Can you create a JavaScript program that will output every number from 1 to 105?
-    * You will fail this task if your program stops short at 104 numbers. **Computers are very literal!**
+1. Use the `arr.push()` method to populate an empty array with the numbers 1 to 20, in order.
 
-2. Copy the code from task1.js into task2.js. Can you now replace every 3rd number with Fizz?
-    * Ensure your code outputs only Fizz for these numbers!
+2. Use the `arr.reverse()` method to reverse the order of the given array.
 
-3. Can you also replace every 5th number with Buzz, and every number that satisfies both conditions with FizzBuzz?
-    * Ensure this outputs FizzBuzz on one line, and not two separate lines, or in the wrong order.
+3. Use the `arr.splice()` method to insert the missing number in the given array at the correct position.
 
-4. Can you continue the pattern by also replacing every 7th number with Woof, alongside the other conditions?
-    * The logical order to the output in the event that a number satisfies all conditions is: Fizz, then Buzz, then Woof.
+4. Use the `arr.splice()` method to delete one of the two duplicate numbers in the given array.
 
 
 ## Extra Tasks
 
 If you have completed the above tasks, try the following extra tasks for a bonus challenge!
 
-5. Can you prompt the user to input the number of lines that will be generated, or to generate a specific line?
+5. Use `join()` on the given array to print a string of numbers from it, separated by commas only - no spaces!
 
-6. Can you assign the output numbers of a generated sequence to elements in a list or array?
+6. Use `concat()` to merge the two given arrays, arr1 and arr2, in order, and then print the new array that's created.
 
-7. How might you attempt to replace a sequence of odd prime numbers with a new word in a list or array?
-    * An example list has been provided in the buzzWords array. Add your own words for higher prime numbers!
+7. A matrix is an array of arrays, representing a grid with rows and columns. Use this task to experiment with matrices!
+    * Can you add a single number to an existing row?
+    * Can you add a whole new row of numbers?
+    * Can you remove a single number from a single row?
+    * Can you reverse one of the rows without affecting the others

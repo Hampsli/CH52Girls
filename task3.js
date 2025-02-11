@@ -1,13 +1,11 @@
-// Refer to Task 3 in your Instructions to complete this task
+const arr = [1,2,3,4,5,6,7,9,10,11,12]
 
-for (let i = 1; i <= 105; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-      console.log("Fizz");
-  } else if (i % 5 === 0) {
-      console.log("Buzz");
-  } else {
-      console.log(i);
-  }
-}
+// Type your code below this line!
+// 3. Use splice() to insert the missing number
+
+arr.splice(7, 0, 8);
+
+
+// Type your code above this line!
+
+arr.forEach(element => console.log(element))

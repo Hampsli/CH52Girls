@@ -1,11 +1,10 @@
-// Refer to Task 4 in your Instructions to complete this task
+const arr = [1,2,3,4,5,5,6,7,8,9,10,11,12,13,14]
 
-for (let i = 1; i <= 105; i++) {
-  let output = "";
+// Type your code below this line!
+// 4. Use splice() to delete a duplicate number
 
-  if (i % 3 === 0) output += "Fizz";
-  if (i % 5 === 0) output += "Buzz";
-  if (i % 7 === 0) output += "Woof";
+arr.splice(4, 1);
 
-  console.log(output || i);
-}
+// Type your code above this line!
+
+arr.forEach(element => console.log(element))
