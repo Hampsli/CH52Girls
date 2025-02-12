@@ -5,16 +5,16 @@ function Mail(subj, msg) {
   
   // Type your code below this line!
   
-  const subject = process.argv[3]; // El primer parámetro después de node y el archivo
-  const message = process.argv[4]; // El segundo parámetro
+  const subject = process.argv[3]; 
+  const message = process.argv[4]; 
   
   const mailList = [];
   
 
-  // Creamos el objeto de Mail 
+ 
   const newMail = new Mail(subject, message);
   
-  // Lo agregamos a la lista
+  
   mailList.push(newMail);
 
   console.log(newMail.subject + ": " + newMail.message)
