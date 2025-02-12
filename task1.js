@@ -1,12 +1,12 @@
-const arr = []
-
-// Type your code below this line!
-// 1. Use push() to populate an array with numbers 1 to 20
-
-for (let i = 0; i <= 20; i++) {
-    arr.push(i);
+function Mail(subj, msg) {
+  this.subject = subj || "hello";
+  this.message = msg || "world";
 }
 
-// Type your code above this line!
+// Type your code below this line!
+const newMail = new Mail();
 
-arr.forEach(element => console.log(element))
+// Type your code above this line!
+console.log(newMail.subject + ": " + newMail.message);
+
+

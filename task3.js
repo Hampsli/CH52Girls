@@ -1,11 +1,14 @@
-const arr = [1,2,3,4,5,6,7,9,10,11,12]
+// Type your code below this line!
+function Mail(subj, msg) {
+  this.subject = subj;
+  this.message = msg;
+  this.printMail = function() {
+      console.log(`${this.subject}: ${this.message}`);
+  };
+}
 
 // Type your code below this line!
-// 3. Use splice() to insert the missing number
-
-arr.splice(7, 0, 8);
-
+const newMail = new Mail(process.argv[3], process.argv[4]);
 
 // Type your code above this line!
-
-arr.forEach(element => console.log(element))
+newMail.printMail();

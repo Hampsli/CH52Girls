@@ -1,10 +1,21 @@
-const arr = [1,2,3,4,5,5,6,7,8,9,10,11,12,13,14]
+function Mail(subj, msg) {
+    this.subject = subj;
+    this.message = msg;
+    this.printMail = function() {
+        console.log(`${this.subject}: ${this.message}`);
+    };
+}
+
+function Journey(start, end) {
+    this.start = start;
+    this.end = end;
+}
 
 // Type your code below this line!
-// 4. Use splice() to delete a duplicate number
-
-arr.splice(4, 1);
+const from = process.argv[3];
+const to = process.argv[4];
+const travel = new Journey(from, to);
 
 // Type your code above this line!
+console.log("Booking a taxi from " + travel.start + " to " + travel.end + ".");
 
-arr.forEach(element => console.log(element))

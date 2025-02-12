@@ -1,8 +1,41 @@
-const arr0 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
+function Mail(subj, msg) {
+    this.subject = subj;
+    this.message = msg;
+    this.printMail = function() {
+        console.log(`${this.subject}: ${this.message}`);
+    };
+}
+
+function Journey(start, end) {
+    this.start = start;
+    this.end = end;
+}
 
 // Type your code below this line!
-// 5. Use join() to print a string of numbers separated by commas, no spaces
-
-console.log(arr0.join(','));
+const from = process.argv[3];
+const to = process.argv[4];
+const travel = new Journey(from, to);
 
 // Type your code above this line!
+console.log("Booking a taxi from " + travel.start + " to " + travel.end + ".");
+const readline = require('readline');
+
+function FriendsList() {
+    this.names = [];
+}
+
+FriendsList.prototype.addFriend = function(name) {
+    this.names.push(name);
+};
+
+FriendsList.prototype.printFriends = function() {
+    console.log(this.names);
+};
+
+// Type your code below this line!
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+

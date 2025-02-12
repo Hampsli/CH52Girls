@@ -4,15 +4,17 @@
 // Open task1.js to begin.
 
 let task;
+let args;
 
 if (process.argv[2]) {
   task = parseInt(process.argv[2]);
+  args = process.argv.slice(2);
 } else {
   const prompt = require("prompt-sync")();
   task = parseInt(prompt("Run task [1-7]: "));
 };
 
-switch(task) {
+switch (task) {
   case 1:
     require('./task1.js');
     break;
@@ -33,4 +35,4 @@ switch(task) {
     break;
   case 7:
     require('./task7.js');
-};
+}

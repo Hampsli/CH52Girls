@@ -22,26 +22,7 @@ def test_task_one():
 
     # Outputs
     output_array = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
-        '11',
-        '12',
-        '13',
-        '14',
-        '15',
-        '16',
-        '17',
-        '18',
-        '19',
-        '20'
+        'hello: world'
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -50,27 +31,14 @@ def test_task_one():
 def test_task_two():
     # Inputs
     input_array = [
-        '2'
+        '2',
+        'tomato',
+        'sauce'
     ]
 
     # Outputs
     output_array = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
-        '11',
-        '12',
-        '13',
-        '14',
-        '15',
-        '16'
+        'tomato: sauce'
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -79,23 +47,14 @@ def test_task_two():
 def test_task_three():
     # Inputs
     input_array = [
-        '3'
+        '3',
+        'pizza',
+        'pineapple'
     ]
 
     # Outputs
     output_array = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
-        '11',
-        '12'
+        'pizza: pineapple'
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -104,25 +63,14 @@ def test_task_three():
 def test_task_four():
     # Inputs
     input_array = [
-        '4'
+        '4',
+        'Queens',
+        'Brooklyn'
     ]
 
     # Outputs
     output_array = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
-        '11',
-        '12',
-        '13',
-        '14'
+        'Booking a taxi from Queens to Brooklyn.'
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -131,26 +79,16 @@ def test_task_four():
 def test_task_five():
     # Inputs
     input_array = [
-        '5'
+        '5',
+        '3',
+        'Gigi',
+        'Sam',
+        'Jack'
     ]
 
     # Outputs
     output_array = [
-        '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24'
-    ]
-
-    prepare_and_assert(input_array, output_array)
-
-# Test 6
-def test_task_six():
-    # Inputs
-    input_array = [
-        '6'
-    ]
-
-    # Outputs
-    output_array = [
-        "[ 'hello', 'world' ]"
+        "[ 'Gigi', 'Sami', 'Jack' ]"
     ]
 
     prepare_and_assert(input_array, output_array)

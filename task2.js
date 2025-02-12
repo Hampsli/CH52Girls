@@ -1,10 +1,11 @@
-const arr = [16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
+function Mail(subj, msg) {
+  this.subject = subj;
+  this.message = msg;
+}
 
 // Type your code below this line!
-// 2. Use reverse() to reverse an array
-
-arr.reverse();
+const newMail = new Mail(process.argv[3], process.argv[4]);
 
 // Type your code above this line!
+console.log(newMail.subject + ": " + newMail.message);
 
-arr.forEach(element => console.log(element))
