@@ -1,41 +1,28 @@
-function Mail(subj, msg) {
-    this.subject = subj;
-    this.message = msg;
-    this.printMail = function() {
-        console.log(`${this.subject}: ${this.message}`);
-    };
+export class Player { 
+  constructor(name, level) {
+    this.name = name;
+    this.level = level;
+    this.experience = 0;      
+    this.expToLevel = 100;    
+  }
+  
+  info() {
+    console.log(`${this.name} has reached Level ${this.level}!`);
+  }
+  
+  levelUp() {
+    this.level++;
+    console.log(`${this.name} leveled up! Now at Level ${this.level}`);
+  }
+  
+  gainExp(exp) {
+    this.experience += exp;
+    console.log(`${this.name} gained ${exp} exp. Total exp: ${this.experience}`);
+   
+    while (this.experience >= this.expToLevel) {
+      this.experience -= this.expToLevel;
+      this.levelUp();
+    }
+  }
 }
-
-function Journey(start, end) {
-    this.start = start;
-    this.end = end;
-}
-
-// Type your code below this line!
-const from = process.argv[3];
-const to = process.argv[4];
-const travel = new Journey(from, to);
-
-// Type your code above this line!
-console.log("Booking a taxi from " + travel.start + " to " + travel.end + ".");
-const readline = require('readline');
-
-function FriendsList() {
-    this.names = [];
-}
-
-FriendsList.prototype.addFriend = function(name) {
-    this.names.push(name);
-};
-
-FriendsList.prototype.printFriends = function() {
-    console.log(this.names);
-};
-
-// Type your code below this line!
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
 

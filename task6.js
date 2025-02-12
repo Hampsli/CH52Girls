@@ -1,5 +1,7 @@
-// Type your code below this line!
+export class Player {
+  constructor() {
+    
+  }
 
-
-
-// Type your code above this line!
+  
+}

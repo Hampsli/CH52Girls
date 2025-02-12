@@ -1,57 +1,51 @@
 # Instructions
-Constructors are used to define a template for a new object type. The `new` operator will create a new instance of that object.
+Classes are an alternative syntax for defining a **template** for constructing objects. Like constructor functions, they can be used to construct objects with their **own** set of properties and methods. Like prototypes, they also allow for objects to **inherit** them. Class **constructor methods** are used to create an instance of a class. **Shared methods** are inherited by each instance.
 
-**Today, you will explore constructor functions, and teach yourselves how to create your own user-defined objects!**
+**Today, you will be defining classes, initialising objects with properties, and acting on those properties with methods!**
 
-For each of these tasks, type your code directly in the task file - the marking scripts will evaluate what you have written!
+For each of these tasks, you will be building and iterating on your solution for the previous task.
+
 
 ## Tasks
 
-1. You have been presented with a constructor for a Mail object.
-    * Modify the code so that the subject is the word `hello` and the message is the word `world`.
+1. You are working on code that will be used in a video game. You have been asked to create an object class. These will be used to define players in that game. Each player can choose their own name, and these objects will be used to store them.
+    * Modify the Player class so that it will accept a Player "**name**" in an argument.
+        * The key of this property in the resulting object **must** be "`name`" - remember, **computers are very literal**!
 
-2. You have been presented with a constructor for a Mail object.
-    * Modify the code so that the user provides their own subject and message as a execution parameters in that order.
-    * Execution parameters are the values that are passed to a program when it is run.
-    * For example, if the user runs the program with the command `node index.js 2 hello world`, then "node" is the program, "index.js" is the first parameter, "2" is the second parameter, and "hello" and "world" are the third and fourth parameters respectively.
-    * You can access the execution parameters in your program by using the `process.argv` array.
-    * In the example, the process and the first parameter (index 0 and 1 of the `process.argv` array) are "node" and "index.js", so you can ignore them.
-    * The second parameter (index 2) is used by this program to determine the task number to execute, so you can ignore it as well.
-    * You can access the subject and message by using `process.argv[3]` and `process.argv[4]` respectively.
 
-3. You have been presented with a constructor for a Mail object.
-    * Modify the code so that the user provides their own subject and message as execution parameters in that order.
-    * Then, extend the constructor to include a printMail() method that prints the following to the Console:
-        * `<subj>: <msg>`
-        * For example, if the two inputs are `hello` and `world`, then the output should be `hello: world`.
+2. You have now been asked to improve your code, so that the player objects can define both a name and a level number.
+    * Modify the Player class so that it will accept a Player "name" string and a "**level**" number in two separate arguments.
+        * The key of this property in the resulting object **must** be "`level`" - remember, **computers are very literal**!
 
-4. For this task, you will need to write your own constructor.
-    * Create a constructor called Journey that takes two parameters: start and end.
-    * Create a pair of constants called from and to, and assign them the values from the command line arguments.
 
+3. You have now been asked to include a method that will output a string to the console announcing a level up.
+    * Modify the Player class so that it will accept a player name string and a level number in two separate arguments.
+    * Then, define a shared object method `info()` that will print the following string, replacing the two placeholders:
+        * `<name> has reached Level <level>!`
+            * A player named **Tara** at level **6** should result in "`Tara has reached Level 6!`" printed to the console.
+
+
+4. You have now been asked to include a method for levelling a player up, increasing their level number by one.
+    * Modify the Player class so that it will accept a Player name string and a level number in two separate arguments.
+    * Then, define a shared object method `info()` that will output the following string:
+        * `<name> has reached Level <level>`!
+    * Finally, define a second shared object method named `levelUp()` that will **increment** the level of the Player.
 
 ## Extra Tasks
 
-If you have completed the above tasks, try the following extra tasks for a bonus challenge!
+If you have completed the above tasks, try the following extra tasks to **experiment** further!
 
-5. Create a constructor for a FriendsList object that will store a list of names in an array.
-    * Your program should prompt the user for a number, then prompt that number of times to list each name one at a time.
-    * Your program should then print the array directly to the console.
-        * The output should look like this: `[ 'name1', 'name2' ]`
+5. Experiment with allowing the player to level up based on gained experience points.
+    * An experience point is a **number**. A level up should occur when a player gains enough experience points.
+    * Try adding a method to allow a player to gain a given number of experience points.
+    * How many experience points should result in a level up? How can you keep track of this number?
 
-6. Can you create a constructor for an object to describe a shopping list? Use this task to experiment with constructors!
-    * How long should the list be?
-        * Not every user will want the same number of items.
-    * How should you handle multiples of the same item, such as 2 bottles of milk, or a dozen eggs?
-    * How would you collect this data from the user?
-    * How would you store this data in an object?
-    * What would the constructor function for this object look like?
 
-7. Can you create a constructor for an object that can describe a car? Use this task to experiment with constructors!
-    * Think about what data the object should have, how you would collect that data from the user, and how you would store it.
-        * The make, model, and year?
-        * The colour?
-        * The number of doors?
-        * The mileage?
-        * Whether it's a combustion engine or electric?
-        * Anything else?
+6. Experiment with allowing constructed player objects to be added to an **array** of party members.
+    * How should an array of party members be identified in your code?
+    * Try adding methods to add or remove player objects from a given party.
+
+
+7. Experiment with allowing the player to have an inventory of items.
+    * Try adding methods to add or remove items from an inventory.
+    * How can you keep track of the quantity of each item? What **data structure** would you need for this?

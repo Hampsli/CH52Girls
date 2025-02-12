@@ -1,14 +1,11 @@
-// Type your code below this line!
-function Mail(subj, msg) {
-  this.subject = subj;
-  this.message = msg;
-  this.printMail = function() {
-      console.log(`${this.subject}: ${this.message}`);
-  };
+export class Player { 
+  constructor(name, level) {
+    this.name = name;
+    this.level = level;
+  }
+  
+  info() {
+    console.log(`${this.name} has reached Level ${this.level}!`);
+  }
 }
 
-// Type your code below this line!
-const newMail = new Mail(process.argv[3], process.argv[4]);
-
-// Type your code above this line!
-newMail.printMail();

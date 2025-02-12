@@ -22,7 +22,7 @@ def test_task_one():
 
     # Outputs
     output_array = [
-        'hello: world'
+        "Player { name: 'Grog' }"
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -31,14 +31,12 @@ def test_task_one():
 def test_task_two():
     # Inputs
     input_array = [
-        '2',
-        'tomato',
-        'sauce'
+        '2'
     ]
 
     # Outputs
     output_array = [
-        'tomato: sauce'
+        "Player { name: 'Grog', level: 4 }"
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -47,14 +45,12 @@ def test_task_two():
 def test_task_three():
     # Inputs
     input_array = [
-        '3',
-        'pizza',
-        'pineapple'
+        '3'
     ]
 
     # Outputs
     output_array = [
-        'pizza: pineapple'
+        'Grog has reached Level 4!'
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -63,32 +59,13 @@ def test_task_three():
 def test_task_four():
     # Inputs
     input_array = [
-        '4',
-        'Queens',
-        'Brooklyn'
+        '4'
     ]
 
     # Outputs
     output_array = [
-        'Booking a taxi from Queens to Brooklyn.'
-    ]
-
-    prepare_and_assert(input_array, output_array)
-
-# Test 5
-def test_task_five():
-    # Inputs
-    input_array = [
-        '5',
-        '3',
-        'Gigi',
-        'Sam',
-        'Jack'
-    ]
-
-    # Outputs
-    output_array = [
-        "[ 'Gigi', 'Sami', 'Jack' ]"
+        'Grog has reached Level 4!',
+        'Grog has reached Level 5!'
     ]
 
     prepare_and_assert(input_array, output_array)
