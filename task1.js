@@ -1,11 +1,5 @@
-/**
- * Calcula el pago total de una transacción, aplicando:
- * - Una comisión fija de $3.
- * - Una comisión de interés del 1% sobre el monto de la transacción.
- *
- * @param {number} amount - El monto de la transacción.
- * @returns {number} - El total a pagar.
- */
-export function calculatePayment(amount) {
-    return amount * 1.01 + 3;
-  }
+// Refer to Task 1 in your Instructions to complete this task
+
+for (let i = 0; i <= 105; i++) {
+    console.log(i);
+  };
