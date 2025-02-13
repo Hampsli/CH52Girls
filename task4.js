@@ -1,20 +1,13 @@
-export class Player { 
-  constructor(name, level) {
-    this.name = name;
-    this.level = level;
-  }
-  
-  info() {
-    console.log(`${this.name} has reached Level ${this.level}!`);
-  }
-  
-  levelUp() {
-    this.level++;
-  }
+export class FriendAge {
+    constructor(name, year, month, day) {
+        this.name = name;
+        this.year = year;
+        this.month = month;
+        this.day = day;
+    }
+
+    returnAge() {
+        const age = calcularEdad(this.year, this.month, this.day);
+        return `${this.name} is ${age} today!`;
+    }
 }
-
-const player = new Player("Tara", 6);
-player.info();  
-player.levelUp();
-player.info();  
-

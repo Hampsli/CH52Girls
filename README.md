@@ -1,51 +1,40 @@
 # Instructions
-Classes are an alternative syntax for defining a **template** for constructing objects. Like constructor functions, they can be used to construct objects with their **own** set of properties and methods. Like prototypes, they also allow for objects to **inherit** them. Class **constructor methods** are used to create an instance of a class. **Shared methods** are inherited by each instance.
 
-**Today, you will be defining classes, initialising objects with properties, and acting on those properties with methods!**
+Modules are separate files for containing code and data. You can choose to import everything, or specify what to import.
 
-For each of these tasks, you will be building and iterating on your solution for the previous task.
+**Today, you will be writing code that uses modules!**
+
+The classes, objects, and functions for each of these tasks will be imported into `index.js`. **They must have specific names!**
 
 
 ## Tasks
 
-1. You are working on code that will be used in a video game. You have been asked to create an object class. These will be used to define players in that game. Each player can choose their own name, and these objects will be used to store them.
-    * Modify the Player class so that it will accept a Player "**name**" in an argument.
-        * The key of this property in the resulting object **must** be "`name`" - remember, **computers are very literal**!
+1. Maria is calculating the cost of monthly payments. For every transaction there is a $3 fee and a 1% (0.01) interest fee. 
+    * Given an input transaction amount, export a function that returns the value of what she should be paying.
+        * This function should be able to take a number as input, and return a number as output.
 
+3. Ed would like a way to input the names of three of his friends.
+    * Export a class that will take 3 arguments to construct an object with 3 properties.
+        * The 3 properties in the constructor should be called `name1`, `name2`, and `name3`.
 
-2. You have now been asked to improve your code, so that the player objects can define both a name and a level number.
-    * Modify the Player class so that it will accept a Player "name" string and a "**level**" number in two separate arguments.
-        * The key of this property in the resulting object **must** be "`level`" - remember, **computers are very literal**!
+4. Ed would like a way to calculate an age from a given birth date.
+    * Export a function that will take 3 arguments - a **year**, a **month**, and a **day** - then return an accurate age.
+        * For example, `ageCalculator(2000, 12, 25)` should return the age of someone born on Christmas Day, 2000.
 
-
-3. You have now been asked to include a method that will output a string to the console announcing a level up.
-    * Modify the Player class so that it will accept a player name string and a level number in two separate arguments.
-    * Then, define a shared object method `info()` that will print the following string, replacing the two placeholders:
-        * `<name> has reached Level <level>!`
-            * A player named **Tara** at level **6** should result in "`Tara has reached Level 6!`" printed to the console.
-
-
-4. You have now been asked to include a method for levelling a player up, increasing their level number by one.
-    * Modify the Player class so that it will accept a Player name string and a level number in two separate arguments.
-    * Then, define a shared object method `info()` that will output the following string:
-        * `<name> has reached Level <level>`!
-    * Finally, define a second shared object method named `levelUp()` that will **increment** the level of the Player.
+5. Ed would like a way to calculate the ages of his friends.
+    * Export a class that will return a string containing a given friend's name and age. It should:
+        * Take 4 arguments - a **name**, a **year**, a **month**, and a **day** - and construct an object with those 4 properties.
+        * Have a public method named `returnAge()` that will return the following string: `<name> is <age> today!`
 
 ## Extra Tasks
 
-If you have completed the above tasks, try the following extra tasks to **experiment** further!
+If you have completed the above tasks, try the following extra tasks!
 
-5. Experiment with allowing the player to level up based on gained experience points.
-    * An experience point is a **number**. A level up should occur when a player gains enough experience points.
-    * Try adding a method to allow a player to gain a given number of experience points.
-    * How many experience points should result in a level up? How can you keep track of this number?
+5. A teacher wants to create a rubric for grading students based on a score from 0 to 11.
+    * A student passes if they have a score greater than or equal to 5. Export a function that returns "Pass" or "Fail".
 
+6. A teacher also wants to mark students who get a high score of 9 or more.
+    * Extend the function so that it returns "Excellent" for scores greater than 8.
 
-6. Experiment with allowing constructed player objects to be added to an **array** of party members.
-    * How should an array of party members be identified in your code?
-    * Try adding methods to add or remove player objects from a given party.
-
-
-7. Experiment with allowing the player to have an inventory of items.
-    * Try adding methods to add or remove items from an inventory.
-    * How can you keep track of the quantity of each item? What **data structure** would you need for this?
+7. A teacher also wants to mark students who get a perfect score of 11.
+    * Extend the function so that it returns "Perfect" for a score of 11.
