@@ -1,19 +1,21 @@
-
-let limite = parseInt(prompt("Escribe un número hasta el que quieres jugar FizzBuzzWoof? "));
-
-for (let i = 1; i <= limite; i++) {
- 
-  if (i % 3 === 0 && i % 5 === 0 && i % 7 === 0) {
-    console.log("FizzBuzzWoof");
-  } else if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else if (i % 7 === 0) {
-    console.log("Woof");
-  } else {
-    console.log(i);
+/**
+ * Función que evalúa una puntuación (0-11) y retorna un string con la calificación:
+ * - "Perfect" para una puntuación de 11.
+ * - "Excellent" para puntuaciones mayores a 8 (pero menores a 11).
+ * - "Pass" para puntuaciones de 5 a 8.
+ * - "Fail" para puntuaciones menores a 5.
+ *
+ * @param {number} score - La puntuación del estudiante.
+ * @returns {string} - La calificación correspondiente.
+ */
+export function gradeScore(score) {
+    if (score === 11) {
+      return "Perfect";
+    } else if (score > 8) {
+      return "Excellent";
+    } else if (score >= 5) {
+      return "Pass";
+    } else {
+      return "Fail";
+    }
   }
-}

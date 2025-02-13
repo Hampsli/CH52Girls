@@ -1,20 +1,31 @@
-// Refer to Task 4 in your Instructions to complete this task
 
-for (let i = 1; i <= 105; i++) {
+// Importa la función ageCalculator para reutilizar la lógica de cálculo de edad.
+import { ageCalculator } from './ageCalculator.js';
 
-  //&& CONDICIONANTE AND DEBE CUMPLIR AMBAS
-  //|| CONDICIONANTE OR UNA U OTRA
-  if (i % 3 === 0 && i % 5 === 0 && i % 7 ===0) {
-   console.log("FizzBuzzWoof"); }
-  if (i % 3 === 0 && i % 5 === 0) {
-     console.log("FizzBuzz");
-   } else if (i % 3 === 0) {
-     console.log("Fizz");
-   } else if (i % 5 === 0) {
-     console.log("Buzz");
-   } else if (i % 7 === 0) {
-     console.log("Woof");  
-   }else {
-    console.log(i);
+/**
+ * Clase que representa a un amigo y puede retornar un mensaje con su edad.
+ */
+export class FriendAge {
+  /**
+   * Crea una instancia de FriendAge.
+   * @param {string} name - El nombre del amigo.
+   * @param {number} year - El año de nacimiento.
+   * @param {number} month - El mes de nacimiento (1-12).
+   * @param {number} day - El día de nacimiento.
+   */
+  constructor(name, year, month, day) {
+    this.name = name;
+    this.year = year;
+    this.month = month;
+    this.day = day;
+  }
+  
+  /**
+   * Retorna un string con el nombre del amigo y su edad actual.
+   * @returns {string} - Ejemplo: "Carlos is 25 today!"
+   */
+  returnAge() {
+    const age = ageCalculator(this.year, this.month, this.day);
+    return `${this.name} is ${age} today!`;
   }
 }
