@@ -29,10 +29,23 @@ watchList.push(movie2);
 
 // todos los objetos que se creen apartir de la función movie, tienen el método .info()
 // hereda las características de la función movie
-movie1.info();
+/*movie1.info();*/
 
 // se agrega
-console.log(movie2.name);
-watchList[0].info();
+/*console.log(movie2.name);*/
+/*watchList[0].info();*/
 // imprime toda la lista de películas
-console.log(watchList);
+/*console.log(watchList);*/
+
+// nuevo método para crear un objeto
+const avatar = Object.create(movie2);
+watchList.push(avatar);
+
+avatar.name = "Avatar";
+avatar.times = 5.835;
+avatar.times = avatar.times.toFixed(2);
+//todo lo que hay en el objeto avatar creado
+avatar.info();
+//todo lo que hay en el objeto avatar localizado en la posición [2]
+watchList[2].info();
+console.log(avatar);
