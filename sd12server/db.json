@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "first_name": "Joshua",
+      "last_name": "Diaz",
+      "email": "j3@example.com"
+    },
+    {
+      "id": "2",
+      "first_name": "Song",
+      "last_name": "Gonzalez",
+      "email": "sgo@example.com"
+    },
+    {
+      "id": "3",
+      "first_name": "Milagro",
+      "last_name": "Juarez",
+      "email": "miljua23@example.com"
+    },
+    {
+      "id": "4",
+      "first_name": "Olivia",
+      "last_name": "Brown",
+      "email": "olibrown432@example.net"
+    },
+    {
+      "id": "07dc",
+      "first_name": "Kai",
+      "last_name": "Nathaniel",
+      "email": "kai.n@example.org"
+    },
+    {
+      "id": "d314",
+      "first_name": "Kai",
+      "last_name": "Nathaniel",
+      "email": "kai.n@example.org"
+    },
+    {
+      "id": "3fda",
+      "first_name": "Kai",
+      "last_name": "Nathaniel",
+      "email": "kai.n@example.org"
+    }
+  ]
+}
