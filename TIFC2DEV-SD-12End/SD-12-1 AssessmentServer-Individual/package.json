@@ -1,0 +1,18 @@
+{
+  "name": "sd-12-1-assessmentserver-individual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-json": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hyphen": "^1.10.6",
+    "json": "^11.0.0",
+    "server": "^1.0.41"
+  }
+}
