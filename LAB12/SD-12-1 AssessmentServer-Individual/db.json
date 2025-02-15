@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "first_name": "Song",
+      "last_name": "Gonzalez",
+      "email": "sgo@example.com"
+    },
+    {
+      "id": "3",
+      "first_name": "Milagro",
+      "last_name": "Juarez",
+      "email": "miljua23@example.com"
+    },
+    {
+      "id": "4",
+      "first_name": "Olivia",
+      "last_name": "Brown",
+      "email": "olibrown432@example.net"
+    },
+    {
+      "id": "5",
+      "first_name": "Alex",
+      "last_name": "Chen",
+      "email": "achen12@example.net"
+    },
+    {
+      "id": "6",
+      "first_name": "Kai",
+      "last_name": "Nathaniel",
+      "email": "kai.n@example.org"
+    },
+    {
+      "id": 7,
+      "first_name": "Alan",
+      "last_name": "Maz",
+      "email": "martinez@example.com"
+    }
+  ]
+}
