@@ -19,4 +19,4 @@ export function delUser(number) {
         console.error("Error deleting user:", error);
     });
 }
-
+delUser(1).then(() => console.log("User successfully deleted"));
