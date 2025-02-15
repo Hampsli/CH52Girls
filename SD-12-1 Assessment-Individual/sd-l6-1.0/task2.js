@@ -1,5 +1,5 @@
 // Task 2: listUsers()
-// Importa fetch desde 'node-fetch' si estás usando Node.js
+
 import fetch from 'node-fetch';
 
 export async function listUsers() {

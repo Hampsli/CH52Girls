@@ -1,6 +1,6 @@
 // Task 3: addUser(first_name, last_name, email)
 
-// addUser.js
+
 export async function addUser(firstName, lastName, email) {
     const response = await fetch("http://localhost:3000/users", {
       method: "POST",
