@@ -21,4 +21,4 @@ export function addUser(first_name, last_name, email) {
     });
 }
 
-console.log(addUser("Morrito", "Swift", "morritoswift@travis.com"))
+//console.log(addUser("Morrito", "Swift", "morritoswift@travis.com"))

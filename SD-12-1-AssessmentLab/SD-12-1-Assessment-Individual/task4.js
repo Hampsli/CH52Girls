@@ -13,11 +13,10 @@ export function delUser(number) {
         if(!response.ok) {
             throw new Error("Error performing DELETE request");
         }
-        console.log(`Usser ${number} deleted successfully`);
+        console.log(`User ${number} deleted successfully`);
     })
     .catch((error) => {
         console.error("Error deleting user:", error);
     });
 }
 
-console.log(delUser(1));
