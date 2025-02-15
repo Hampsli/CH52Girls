@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "4",
+      "first_name": "Olivia",
+      "last_name": "Brown",
+      "email": "olibrown432@example.net"
+    },
+    {
+      "id": "5",
+      "first_name": "Alex",
+      "last_name": "Chen",
+      "email": "achen12@example.net"
+    },
+    {
+      "id": "21dc",
+      "first_name": "Anita",
+      "last_name": "Villalobos",
+      "email": "anavillalov@gmail.com"
+    },
+    {
+      "id": "af11",
+      "first_name": "Morrito",
+      "last_name": "Swift",
+      "email": "morritoswift@travis.com"
+    },
+    {
+      "id": "4c20",
+      "first_name": "Taylor",
+      "last_name": "Swift",
+      "email": "taylorswift13@taylorswift.com"
+    }
+  ]
+}
