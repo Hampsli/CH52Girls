@@ -1,10 +1,11 @@
-export function ageCalculator(year, month, day) {
-    const today = new Date();
-    let age = today.getFullYear() - year;
-    if (today.getMonth() + 1 < month || (today.getMonth() + 1 === month && today.getDate() < day)) {
-        age--;
-    }
-    return age;
-} 
+const arr = [1,2,3,4,5,6,7,9,10,11,12]
+
+// Type your code below this line!
+// 3. Use splice() to insert the missing number
+
+arr.splice(7, 0, 8);
 
 
+// Type your code above this line!
+
+arr.forEach(element => console.log(element))

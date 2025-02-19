@@ -1,10 +1,8 @@
-export function rubricPassFail() {
+const arr0 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
 
-}
+// Type your code below this line!
+// 5. Use join() to print a string of numbers separated by commas, no spaces
 
-export function rubricPassFail(puntuacion) {
-    if (puntuacion === 11) return "Perfect";
-    if (puntuacion > 8) return "Excellent";
-    if (puntuacion >= 5) return "Pass";
-    return "Fail";
-}
+console.log(arr0.join(','));
+
+// Type your code above this line!

@@ -1,40 +1,31 @@
 # Instructions
+Arrays are a simple data structure used everywhere in programming. There are many ways to interact with arrays in JavaScript.
 
-Modules are separate files for containing code and data. You can choose to import everything, or specify what to import.
+**Today, you will be exploring arrays, and teaching yourselves different methods for manipulating them.**
 
-**Today, you will be writing code that uses modules!**
-
-The classes, objects, and functions for each of these tasks will be imported into `index.js`. **They must have specific names!**
-
+For each of these tasks, type your code directly in the task file - the marking scripts will evaluate what you have written!
 
 ## Tasks
 
-1. Maria is calculating the cost of monthly payments. For every transaction there is a $3 fee and a 1% (0.01) interest fee. 
-    * Given an input transaction amount, export a function that returns the value of what she should be paying.
-        * This function should be able to take a number as input, and return a number as output.
+1. Use the `arr.push()` method to populate an empty array with the numbers 1 to 20, in order.
 
-3. Ed would like a way to input the names of three of his friends.
-    * Export a class that will take 3 arguments to construct an object with 3 properties.
-        * The 3 properties in the constructor should be called `name1`, `name2`, and `name3`.
+2. Use the `arr.reverse()` method to reverse the order of the given array.
 
-4. Ed would like a way to calculate an age from a given birth date.
-    * Export a function that will take 3 arguments - a **year**, a **month**, and a **day** - then return an accurate age.
-        * For example, `ageCalculator(2000, 12, 25)` should return the age of someone born on Christmas Day, 2000.
+3. Use the `arr.splice()` method to insert the missing number in the given array at the correct position.
 
-5. Ed would like a way to calculate the ages of his friends.
-    * Export a class that will return a string containing a given friend's name and age. It should:
-        * Take 4 arguments - a **name**, a **year**, a **month**, and a **day** - and construct an object with those 4 properties.
-        * Have a public method named `returnAge()` that will return the following string: `<name> is <age> today!`
+4. Use the `arr.splice()` method to delete one of the two duplicate numbers in the given array.
+
 
 ## Extra Tasks
 
-If you have completed the above tasks, try the following extra tasks!
+If you have completed the above tasks, try the following extra tasks for a bonus challenge!
 
-5. A teacher wants to create a rubric for grading students based on a score from 0 to 11.
-    * A student passes if they have a score greater than or equal to 5. Export a function that returns "Pass" or "Fail".
+5. Use `join()` on the given array to print a string of numbers from it, separated by commas only - no spaces!
 
-6. A teacher also wants to mark students who get a high score of 9 or more.
-    * Extend the function so that it returns "Excellent" for scores greater than 8.
+6. Use `concat()` to merge the two given arrays, arr1 and arr2, in order, and then print the new array that's created.
 
-7. A teacher also wants to mark students who get a perfect score of 11.
-    * Extend the function so that it returns "Perfect" for a score of 11.
+7. A matrix is an array of arrays, representing a grid with rows and columns. Use this task to experiment with matrices!
+    * Can you add a single number to an existing row?
+    * Can you add a whole new row of numbers?
+    * Can you remove a single number from a single row?
+    * Can you reverse one of the rows without affecting the others

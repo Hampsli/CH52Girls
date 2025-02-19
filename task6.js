@@ -1,10 +1,10 @@
-export function rubricExcellent() {
-    
-}
+const arr1 = ["hello"]
+const arr2 = ["world"]
 
-export function rubricExcellent(puntuacion) {
-    if (puntuacion === 11) return "Perfect";
-    if (puntuacion > 8) return "Excelent";
-    if (puntuacion >= 5) return "Pass";
-    return "Fail";
-}
+// Type your code below this line!
+// 6. Use concat() to merge two arrays
+
+contsmergedArray = arr1.concat(arr2);
+console.log(mergedArray);
+
+// Type your code above this line!
