@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+/*Todos los elementos h1 sean verdes*/
+
+  h1{
+    color:green;
+  }
+  /*ID*/
+  #saludo {
+    color:red;
+  }
+
+  /*Clase*/
+  .holi{
+    color:blue;
+  }
+  
