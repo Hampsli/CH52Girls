@@ -1,10 +1,14 @@
-const arr = [1,2,3,4,5,5,6,7,8,9,10,11,12,13,14]
+// Task 4: delUser(number)
+export async function delUser(id) {
+    try {
+        const response = await fetch(`${getServerURL()}/users/${id}`, {
+            method: "DELETE"
+        });
 
-// Type your code below this line!
-// 4. Use splice() to delete a duplicate number
+        if (!response.ok) throw new Error("Error al eliminar usuario");
+        console.log(`Usuario con ID ${id} eliminado exitosamente`);
+    } catch (error) {
+        console.error("Error en delUser:", error.message);
+    }
+}
 
-arr.splice(4, 1);
-
-// Type your code above this line!
-
-arr.forEach(element => console.log(element))

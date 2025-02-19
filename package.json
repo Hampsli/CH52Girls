@@ -1,5 +1,18 @@
 {
+  "name": "sd-12-1-assessment-individual",
+  "version": "1.0.0",
+  "description": "A **Web API** allows our applications to communicate - **request** resources and **receive** responses - over the internet.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "json-server": "^1.0.0-beta.3",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }

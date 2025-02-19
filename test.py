@@ -22,26 +22,7 @@ def test_task_one():
 
     # Outputs
     output_array = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
-        '11',
-        '12',
-        '13',
-        '14',
-        '15',
-        '16',
-        '17',
-        '18',
-        '19',
-        '20'
+        "{ body: 'success' }"
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -55,22 +36,31 @@ def test_task_two():
 
     # Outputs
     output_array = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
-        '11',
-        '12',
-        '13',
-        '14',
-        '15',
-        '16'
+        "[",
+        "{",
+        "  id: 1,",
+        "  first_name: 'Joshua',",
+        "  last_name: 'Diaz',",
+        "  email: 'j3@example.com'",
+        "},",
+        "{",
+        "  id: 2,",
+        "  first_name: 'Song',",
+        "  last_name: 'Gonzalez',",
+        "  email: 'sgo@example.com'",
+        "},",
+        "{",
+        "  id: 3,",
+        "  first_name: 'Milagro',",
+        "  last_name: 'Juarez',",
+        "  email: 'miljua23@example.com'",
+        "},",
+        "{",
+        "  id: 4,",
+        "  first_name: 'Olivia',",
+        "  last_name: 'Brown',",
+        "  email: 'olibrown432@example.net'",
+        "}"
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -84,18 +74,12 @@ def test_task_three():
 
     # Outputs
     output_array = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
-        '11',
-        '12'
+        "{",
+        "  id: 6,",
+        "  first_name: 'Kai',",
+        "  last_name: 'Nathaniel',",
+        "  email: 'kai.n@example.org'",
+        "}"
     ]
 
     prepare_and_assert(input_array, output_array)
@@ -109,48 +93,32 @@ def test_task_four():
 
     # Outputs
     output_array = [
-        '1',
-        '2',
-        '3',
-        '4',
-        '5',
-        '6',
-        '7',
-        '8',
-        '9',
-        '10',
-        '11',
-        '12',
-        '13',
-        '14'
-    ]
-
-    prepare_and_assert(input_array, output_array)
-
-# Test 5
-def test_task_five():
-    # Inputs
-    input_array = [
-        '5'
-    ]
-
-    # Outputs
-    output_array = [
-        '1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24'
-    ]
-
-    prepare_and_assert(input_array, output_array)
-
-# Test 6
-def test_task_six():
-    # Inputs
-    input_array = [
-        '6'
-    ]
-
-    # Outputs
-    output_array = [
-        "[ 'hello', 'world' ]"
+        "[",
+        "  {",
+        "    id: 1,",
+        "    first_name: 'Joshua',",
+        "    last_name: 'Diaz',",
+        "    email: 'j3@example.com'",
+        "  },",
+        "  {",
+        "    id: 2,",
+        "    first_name: 'Song',",
+        "    last_name: 'Gonzalez',",
+        "    email: 'sgo@example.com'",
+        "  },",
+        "  {",
+        "    id: 3,",
+        "    first_name: 'Milagro',",
+        "    last_name: 'Juarez',",
+        "    email: 'miljua23@example.com'",
+        "  },",
+        "  {",
+        "    id: 4,",
+        "    first_name: 'Olivia',",
+        "    last_name: 'Brown',",
+        "    email: 'olibrown432@example.net'",
+        "  }",
+        "]"
     ]
 
     prepare_and_assert(input_array, output_array)

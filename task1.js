@@ -1,12 +1,8 @@
-const arr = []
-
-// Type your code below this line!
-// 1. Use push() to populate an array with numbers 1 to 20
-
-for (let i = 0; i <= 20; i++) {
-    arr.push(i);
+// Task 1: getServerU
+export function getServerURL() {
+    return "http://localhost:3000"; 
 }
 
-// Type your code above this line!
+import { getServerURL } from "./getServerURL.js";
 
-arr.forEach(element => console.log(element))
+console.log("La URL del servidor es:", getServerURL());

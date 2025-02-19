@@ -1,36 +1,41 @@
 // DO NOT MODIFY THIS FILE!
 
-// Your 7 tasks are located in separate files.
+// Your 4 tasks are located in separate files.
 // Open task1.js to begin.
+
+import * as task1 from "./task1.js";
+import * as task2 from "./task2.js";
+import * as task3 from "./task3.js";
+import * as task4 from "./task4.js";
 
 let task;
 
 if (process.argv[2]) {
   task = parseInt(process.argv[2]);
 } else {
-  const prompt = require("prompt-sync")();
-  task = parseInt(prompt("Run task [1-7]: "));
+  console.log("Please run your task file directly in node.")
+  console.log("Example: node task1.js")
 };
 
-switch(task) {
+switch (task) {
   case 1:
-    require('./task1.js');
+    globalThis.getServerURL = task1.getServerURL;
+    fetch(getServerURL() + "/test.json").then(response => response.json()).then(data => console.log(data));
     break;
   case 2:
-    require('./task2.js');
+    globalThis.listUsers = task2.listUsers;
+    listUsers();
     break;
   case 3:
-    require('./task3.js');
+    globalThis.getServerURL = task1.getServerURL;
+    globalThis.addUser = task3.addUser;
+    addUser("Kai", "Nathaniel", "kai.n@example.org");
+    setTimeout(function () { fetch(getServerURL() + "/users/6").then(response => response.json()).then(data => console.log(data)); }, 2000);
     break;
   case 4:
-    require('./task4.js');
-    break;
-  case 5:
-    require('./task5.js');
-    break;
-  case 6:
-    require('./task6.js');
-    break;
-  case 7:
-    require('./task7.js');
-};
+    globalThis.getServerURL = task1.getServerURL;
+    globalThis.delUser = task4.delUser;
+    delUser(6);
+    delUser(5);
+    setTimeout(function () { fetch(getServerURL() + "/users").then(response => response.json()).then(data => console.log(data)); }, 2000);
+}

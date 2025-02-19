@@ -1,10 +1,12 @@
-const arr = [16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
-
-// Type your code below this line!
-// 2. Use reverse() to reverse an array
-
-arr.reverse();
-
-// Type your code above this line!
-
-arr.forEach(element => console.log(element))
+// Task 2: listUsers()
+export async function listUsers() {
+    try {
+        const response = await fetch(`${getServerURL()}/users`);
+        if (!response.ok) throw new Error("Error al obtener los usuarios");
+        
+        const users = await response.json();
+        console.log(users);
+    } catch (error) {
+        console.error("Error en listUsers:", error.message);
+    }
+}
