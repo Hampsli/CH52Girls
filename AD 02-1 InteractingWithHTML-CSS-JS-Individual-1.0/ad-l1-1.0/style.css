@@ -1,0 +1,13 @@
+/* style.css */
+
+h1 {
+  color: green; /* Todos los elementos h1 serán verdes */
+}
+
+.blue {
+  color: blue; /* Elementos con la clase "blue" serán azules */
+}
+
+#red {
+  color: red; /* Elemento con el ID "red" será rojo */
+}
