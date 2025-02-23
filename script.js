@@ -1,8 +1,21 @@
-document.getElementById("red").textContent = "Adiós";
+function showAlert() {
+    alert("ITS BURGERTIME");
+}
 
-document.querySelector("h1").style.color = "orange";
+function logMessage() {
+    console.log("Someone click on BURGER TOWN!");
+}
 
-document.getElementById("clickable").addEventListener("click", function() {
-    this.style.color = "brown";
-});
+function addBurgerImage() {
+    let imgContainer = document.getElementById("burger-image-container");
+    let img = document.createElement("img");
+    img.src = "Burger4.svg"; // Placeholder image
+    img.alt = "Imagen de hamburguesa";
+    imgContainer.appendChild(img);
+}
 
+addBurgerImage();
+
+function changeColor() {
+    document.getElementById("burger-header").style.color = "red";
+}
