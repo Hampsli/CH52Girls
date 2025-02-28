@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD-10-BOOTSTRAP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<!-- Contenedores de bootstrap -->
+<div class = "container">
+    <h1>Hola CH52!</h1>
+    <input type="button" value="Hola CH52!">
+</div>
+
+<div class=" container-fluid">
+    <h2>probando bootstrap</h2>
+</div>
+<!--Botones
+del link sacas los codigos de botones https://getbootstrap.com/docs/5.3/components/buttons/-->
+<div class="container">
+<button>Enviar</button> <!--Boton normal, sin diseños-->
+<button class= "btn btn-primary"> enviar2 </button> <!--Boton mas bonito-->
+<button class= "btn btn-secondary"> boton secondary </button>
+<button type="button" class="btn btn-outline-danger btn-lg">Danger</button>
+</div>
+<!--Alineación de texto-->
+<p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+<p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p>
+
+<!--Card https://getbootstrap.com/docs/5.3/components/card/-->
+<div class="card" style="width: 18rem;">
+    <img src="https://images.pexels.com/photos/673900/pexels-photo-673900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tarjeta de bootstrap</h5>
+      <p class="card-text">Probando mi tarjetita flexible como componente</p>
+      <a href="#" class="btn btn-primary">Descubre</a>
+    </div>
+  </div>
+
+<!--Listas-->
+<ul>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+</ul>
+
+<!--lista ordenada por grupo-->
+<ul class="List group">
+    <li class="List group-item">Item 1</li>
+    <li class="List group-item">Item 2</li>
+    <li class="List group-item">Item 3</li>
+    <li class="List group-item">Item 4</li>
+</ul>
+
+<!--Alertas-->
+<div class="container">
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Alerta</button>
+</div>
+
+<!--Rejilla o grid solo se puede maximo 12 columnas
+row= fila
+col=columna   
+m -> margin 
+my -> marginTop and marginBottom 
+mx - margen entre columnas
+el "border border-primary" lo sacamos de la documentación y fue para ponerle un borde a las columnas-->
+<div class="container-fluid text-center my-5 border border-primary">
+    <div class="row border border-secondary my-5 mx-1">
+        <div class="col-7 border border-danger my-3 ">
+            Columna 01
+        </div>
+        <div class="col-2 border border-danger my-3 ">
+            Columna 02
+        </div>
+        <div class="col-3 border border-danger my-3 ">
+            Columna 03
+        </div>
+    </div>
+    <div class="row border border-secondary my-5 mx-1">
+        <div class="col-7 col-sm-12 col-xxl-7 border border-danger my-3 ">
+            Columna 01
+        </div>
+        <div class="col-2 col-sm-12 col-xxl-2 border border-danger my-3 ">
+            Columna 02
+        </div>
+        <div class="col-3 col-sm-12 col-xxl-3 border border-danger my-3 ">
+            Columna 03
+        </div>
+    </div>
+</div>
+  <!-- para duplicar, subrayas lo que quieras suplicar y aprietas alt + shift + flecha para abajo-->
+</div>
+</div>
+
+<!--Formularios
+https://getbootstrap.com/docs/5.3/forms/overview/#overview-->
+<form>
+    <div class="container mb-5 border border-danger p-2">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">No compartimos con nadie más.</div>
+                <!-- Div vacío para manejar validaciones -->
+                <div id="validation"></div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <!-- div vacio para manejar validación de contraseña -->
+                <div id="validation-password"></div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+<!--Barra de navegación / Navbar
+https://getbootstrap.com/docs/5.3/components/navbar/ -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          <a class="nav-link" href="#">Novedades</a>
+          <a class="nav-link" href="#">Precios</a>
+          <a class="nav-link disabled" aria-disabled="true">Deshahbilitado</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </nav>
+
+
+
+
+
+    <script src= "./script.js"></script>
+    <!--Script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
