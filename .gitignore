@@ -169,3 +169,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Ignorar dependencias de npm
+node_modules/
+package-lock.json
