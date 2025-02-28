@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Estilos para el menú de navegación */
+
+ 
+.contacto body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.containerc {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1 {
+    color: #8800ff;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+  
+/* Estilos para el menú de navegación */
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #93c280;
+    z-index: 1000; /* Para asegurarse de que siempre esté sobre otros contenidos */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between; /* Espaciado igual entre los elementos */
+    list-style: none;
+    width: 60%; /* Ajusta el ancho total de la barra de navegación */
+    margin: 0 auto; /* Centra el menú en la página */
+    padding: 0;
+}
+
+.navbar li {
+    width: 33%; /* Cada elemento ocupa un 33% del espacio */
+    text-align: center; /* Centra los enlaces dentro de cada <li> */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: #9fc488;
+}
+
+  footer {
+    background-color: #5ea0d6c4; /* Color de fondo oscuro */
+    color: #fff; /* Texto en blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de letra */
+    font-family: 'Courier New','Times New Roman'; /* Fuente limpia */
+    position: relative; /* Permite que se acomode bien en la página */
+    width: 100%; /* Ocupa todo el ancho */
+    margin-top: 20px; /* Espacio antes del footer */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.5); /* Sombra superior suave */
+}
+
+footer p {
+    margin: 5px 0; /* Espaciado entre los textos */
+}
+
+footer a {
+    color: #2400f0; /* Color amarillo-naranja para enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+

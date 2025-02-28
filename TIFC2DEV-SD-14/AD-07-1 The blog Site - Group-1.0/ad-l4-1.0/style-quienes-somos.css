@@ -1,0 +1,118 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Fondo gris claro casi blanco para todo el cuerpo */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  line-height: 1.6;
+}
+
+/* Caja central con contenido */
+main {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el header: fondo morado y texto blanco */
+header {
+  background-color: #9b4d96;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Título dentro del header */
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Sección con texto descriptivo */
+section {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Estilos para los subtítulos */
+section h2 {
+  font-size: 2em;
+  color: #9b4d96; /* Morado */
+  margin-bottom: 15px;
+}
+
+section h3 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos */
+section p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Lista de miembros del equipo */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+ul li {
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1 1 200px;
+}
+
+/* Nombre de los miembros */
+ul li strong {
+  font-size: 1.2em;
+  color: #9b4d96;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilo de las imágenes de los miembros */
+ul li img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+ul li img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer con fondo gris oscuro */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
