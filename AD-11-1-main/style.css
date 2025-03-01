@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+
+.text-center{
+  color: red;
+
+}
+a{
+  margin: 10px;
+}
+.btn-tr{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
