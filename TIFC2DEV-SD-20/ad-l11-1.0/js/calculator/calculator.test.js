@@ -30,3 +30,6 @@ test('multiply 5 x 2 to equal 10', () => {
   test('multiply 10 x 2 to equal 20', () => {
     expect(calculator.multiply(10, 2)).toBe(20);
   });
+test('divide 100 / 0 to equal Indefinido', () => {
+    expect(calculator.divide(100,0)).toBe("Indefinido");
+  });
