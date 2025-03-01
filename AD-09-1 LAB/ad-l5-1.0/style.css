@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    margin: 20px;
+    color: blueviolet;
+    font-style: oblique;
+    font-size: medium;
+  }
+  
+  .basic-btn {
+    margin: 30px;
+
+  }
+
+  .btn-group{
+    margin: 30px;
+  }
+
+ 
+  .card{
+    margin: 30px;
+    
+  }
+  img{
+    width: 50px;
+    height: 250px;
+  }
