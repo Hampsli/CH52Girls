@@ -34,7 +34,12 @@ test('remove user to userController', () => {
     userController.add(user);   
     const foundUser = userController.findByEmail("juanita@generation.org");
     userController.findByEmail(email);    
-    expect(userController.email).toBe(user.email);
+    expect(userController).toBe(user.email);
   });
-
+  test('findById user to userController', () => {    
+    let user = new User(1235,"Juanita", "juanita@generation.org");
+    userController.add(user);    
+    userController.findById(user);
+    expect(userController.users).not.toContain(user);
+  });
 
