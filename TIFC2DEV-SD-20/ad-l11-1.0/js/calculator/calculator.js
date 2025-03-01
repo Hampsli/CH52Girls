@@ -6,7 +6,12 @@ const subtract = function(a, b) {
 }
 
 function divide(a, b){
-  return a / b;
+  if (b != 0){
+    return a / b;
+  }
+  else {
+    return "Indefinido";
+  }
 }
 
 function multiply(a, b){        
