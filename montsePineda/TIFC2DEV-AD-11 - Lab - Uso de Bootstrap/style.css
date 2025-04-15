@@ -1,0 +1,14 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+/*Para forzar el estilo se usa !importand y */
+.btn-primary {
+  background-color: #33ff6d !important;
+  border-color: #26b621 !important;
+}
+.btn-secondary {
+  background-color: #f1ff33 !important; /* Color personalizado */
+  border-color: #ff9c33;
+  color: burlywood; /* Color del texto */
+}
