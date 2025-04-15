@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+#verde {
+    color: red;
+} 
+.clase1 {
+    color: blue;
+} 
+.clase2 {
+    color: blue;
+} 
+.clase3 {
+    color: green;
+} 
+.claseBlue {
+    color: blue;
+} 
+#idRed {
+    color: red;
+} 
+#claseReemplazo {
+    color: green;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}   
